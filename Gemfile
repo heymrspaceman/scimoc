@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '1.9.3'
 gem 'rails', '3.2.3'
-
+gem 'heroku'
 gem 'therubyracer'
 
 # Bundle edge Rails instead:
@@ -10,6 +10,11 @@ gem 'therubyracer'
 
 group :development do
   gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+  gem 'thin'
 end
 
 # Gems used only for assets and not required
